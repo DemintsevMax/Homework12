@@ -10,9 +10,11 @@ public class Main {
 
         Author author2 = new Author("Джейн", "Остин");
         Book book2 = new Book("Гордость и предубеждение", 1813, author2);
-        System.out.println("Название книги: = " + book2.getBookName());
+        System.out.println("Название книги: " + book2.getBookName());
         System.out.println("Год публикации: " + book2.getYearPublic());
         System.out.println("Автор: " + book2.getAuthor().getFirsName() + " " + book2.getAuthor().getLastName());
+
+
 
         book2.setYearPublic(2024);
         System.out.println("Год публикации: = " + book2.getYearPublic());
