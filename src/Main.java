@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Author author1 = new Author("Мартин", "Джордж");
-        Book book1 = new Book("Песнь льда и огня", 1996,author1);
+        Book book1 = new Book("Песнь льда и огня", 1996, author1);
         System.out.println("Название книги: " + book1.getBookName());
         System.out.println("Год публикации: " + book1.getYearPublic());
         System.out.println("Автор: " + book1.getAuthor());
@@ -15,8 +15,12 @@ public class Main {
         System.out.println("Автор: " + book2.getAuthor());
 
 
-
         book2.setYearPublic(2024);
         System.out.println("Год публикации: = " + book2.getYearPublic());
+
+        System.out.println("");
+
+        System.out.println(book1.equals(book2));
+        System.out.println(author1.equals(author2));
     }
 }
